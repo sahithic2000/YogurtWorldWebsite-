@@ -1,0 +1,40 @@
+.navbar {
+    height: 80px; 
+    /* background: pink;  */
+    width: 100%; 
+    position: relative; 
+    z-index: 10;
+}
+
+.navbar > img {
+    width: 200px; 
+    height: 62px;
+    float: left; 
+    padding-left: 35px; 
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%)
+
+}
+
+.links {
+    /* TODO: change font*/
+    font-family: sans-serif; 
+    float: right; 
+    display: flex; 
+    align-items: center;
+    height: 100%;  
+    /* flex-wrap: nowrap;  */
+    /* justify-content: flex-end;  */
+    /* background: red;  */
+    /* z-index: 10;  */
+     
+}
+
+.links > a {
+    color: black;
+    text-decoration: none; 
+    padding-right: 100px; 
+    font-size: 20px;
+
+}
