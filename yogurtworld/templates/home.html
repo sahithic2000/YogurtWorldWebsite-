@@ -4,21 +4,30 @@
 <html>
   <head>
     <link rel="stylesheet" href="../static/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/home.js"></script>
+
   </head>
 
   <body>
-      <div class="navbar">
-        <img src= ../static/images/YGlogo.png>
+    <div class="navbar">
+      <img src= ../static/images/YGlogo.png alt="logoImage">
 
-        <div class="links">
-          <a href= ./home.html>Home</a>
-          <a href= ./menu.html>Menu</a>
-          <a href= ./events.html>Events</a>
-        </div>
+      <!-- <label id="hamburgerIcon" for="toggle">&#9776;</label> -->
+      <label id="hamburgerIcon" for="toggle" onclick="toggleNavBar()"><i id="hamburgerIcon2" class="fa fa-bars menu-toggle"></i></label>
+      <input type="checkbox" id="toggle"/>
 
+      <div class="menu">
+        <a href= ./home.html id="homeLink"><span id="underline">Home</span></a>
+        <a href= ./menu.html id="menuLink" >Menu</a>
+        <a href= ./events.html id="eventsLink">Events</a>
       </div>
-
-      <div class="test">This is the home page. </div>
+      
+    </div>
+    
 
   </body>
+  
 </html>

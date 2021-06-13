@@ -1,13 +1,31 @@
+  
 <!DOCTYPE html>
 
 <html>
-    
+  <head>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/menu.js"></script>
+
+  </head>
+
   <body>
-      <div class="navbar">
-        <a href= ./home.html>Home</a>
-        <a href= ./menu.html>Menu</a>
-        <a href= ./events.html>Events</a>
+    <div class="navbar">
+      <img src= ../static/images/YGlogo.png alt="logoImage">
+
+      <!-- <label id="hamburgerIcon" for="toggle">&#9776;</label> -->
+      <label id="hamburgerIcon" for="toggle" onclick="toggleNavBar()"><i id="hamburgerIcon2" class="fa fa-bars menu-toggle"></i></label>
+      <input type="checkbox" id="toggle"/>
+
+      <div class="menu">
+        <a href= ./home.html id="homeLink">Home</a>
+        <a href= ./menu.html id="menuLink"><span id="underline">Menu</span></a>
+        <a href= ./events.html id="eventsLink">Events</a>
       </div>
-      This is the menu page. 
+      
+    </div>
+    
   </body>
 </html>
