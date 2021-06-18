@@ -1,33 +1,127 @@
-  
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <link rel="stylesheet" href="../static/css/home.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../scripts/home.js"></script>
 
-  </head>
+<head>
+  <link rel="stylesheet" href="../static/css/home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../scripts/home.js"></script>
+  <script src="https://kit.fontawesome.com/731b3fa837.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <div class="navbar">
-      <img src= ../static/images/YGlogo.png alt="logoImage">
+<body>
+  <!--------NAVBAR--------->
+  <div class="navbar">
+    <img src=../static/images/YGlogo.png alt="logoImage">
 
-      <!-- <label id="hamburgerIcon" for="toggle">&#9776;</label> -->
-      <label id="hamburgerIcon" for="toggle" onclick="toggleNavBar()"><i id="hamburgerIcon2" class="fa fa-bars menu-toggle"></i></label>
-      <input type="checkbox" id="toggle"/>
+    <label id="hamburgerIcon" for="toggle" onclick="toggleNavBar()"><i id="hamburgerIcon2"
+        class="fa fa-bars menu-toggle"></i></label>
+    <input type="checkbox" id="toggle" />
 
-      <div class="menu">
-        <a href= ./home.html id="homeLink"><span id="underline">Home</span></a>
-        <a href= ./menu.html id="menuLink" >Menu</a>
-        <a href= ./events.html id="eventsLink">Events</a>
-      </div>
-      
+    <div class="menu">
+      <a href=./home.html id="homeLink"><span id="underline">Home</span></a>
+      <a href=./menu.html id="menuLink">Menu</a>
+      <a href=./events.html id="eventsLink">Events</a>
     </div>
-    
 
-  </body>
-  
+  </div>
+
+  <!--------HEADER--------->
+  <div class="flex-container">
+    <div class="header-pic"><img src="../static/images/3froyos2 2.png" alt="Three Yogurts"
+        style="width: 500px; min-height: 394px; margin-top : 30px;"></div>
+    <div class="header-text">
+      <p style="font-size: 52px;">Unique, new flavors every month.<br><span class="second-text"
+          style="font-size: 24px;">The only frozen
+          yogurt shop at UC San Diego</span></p>
+      <div class="button-container">
+        <a href="./menu.html"><button type="button" class="head-button1">Check Out Our Menu</button></a>
+        <a href="./events.html"><button type="button" class="head-button2">Collab With Us</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!--------CONTENT--------->
+  <div class="hours-container">
+    <div class="hours-images">
+      <img src="../static/images/blob1-cropped.svg" class="blob1">
+      <div class="hours">
+        <div class="hours-inner">
+          <p class="hours-title" style="text-align: center; font-family: 'Quincy'; font-size: 30px; color: #B1C88E;">
+            Hours of Operation:</p>
+          <div class="week">
+            <ul style="list-style-type:none; padding: 0;" class="day">
+              <li>Monday</li>
+              <li>Tuesday</li>
+              <li>Wednesday</li>
+              <li>Thursday</li>
+              <li>Friday</li>
+              <li>Saturday</li>
+              <li>Sunday</li>
+            </ul>
+            <ul style="list-style-type:none; padding: 0;" class="time">
+              <li>10:00 AM - 10:00 PM</li>
+              <li>10:00 AM - 10:00 PM</li>
+              <li>10:00 AM - 10:00 PM</li>
+              <li>10:00 AM - 10:00 PM</li>
+              <li>10:00 AM - 10:00 PM</li>
+              <li>12:00 PM - 10:00 PM</li>
+              <li>CLOSED</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yogurt">
+      <img src="../static/images/YogoVanilla 1.png">
+    </div>
+  </div>
+  <h3 class="first-title">Store Directions</h3>
+  <div class="store-container">
+    <div class="store-text">
+      <p>YogurtWorld is located at the northwest corner of the Student Services Center on the UC San Diego
+        campus.<br><br>The nearest cross street to the Student Services Center is Myers Drive and Rupertus Lane.
+      </p>
+      <a
+        href="https://www.google.com/maps/place/Student+Services+Center/@32.8785203,-117.23808,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc06c467b5168d:0xb16999a26be49f64!8m2!3d32.8785203!4d-117.235886">
+        <div class="store-location">
+          <i class="fas fa-map-marker-alt"
+            style="display: block; margin: auto 0; font-size: 40px; color: #B1C88E; margin-right: 25px;"></i>
+          <p>Student Services Center, 9500 Gilman Dr, La Jolla, CA 92093</p>
+        </div>
+      </a>
+    </div>
+    <div class="store-images">
+      <img src="../static/images/blob2-cropped.svg" class="blob2">
+      <img src="../static/images/map.png" class="map">
+    </div>
+  </div>
+
+  <h3>Parking Instructions</h3>
+  <div class="parking-container">
+    <div class="parking-images">
+      <img src="../static/images/blob3-cropped.svg" class="blob">
+      <img src="../static/images/Directions.gif" class="direc">
+    </div>
+    <div class="parking-text">
+      <p>The nearest paid parking is available at the Gilman Parking Structure. it is 5 minute walking distance
+        away from our YogurtWorld location. The first hour at Gilman Parking Structure is free for visitors.
+        <br><br>There are also free, limited parking spots in the 30 minute loading zone between Raisel Lane and
+        Lyman
+        Lane.
+      </p>
+      <a
+        href="https://www.google.com/maps/place/Gilman+Parking+Structure,+3100+Gilman+Dr,+La+Jolla,+CA+92093/@32.8773774,-117.2360466,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc06c5218d55eb:0xd07cbfc872e378aa!8m2!3d32.8773774!4d-117.2338526">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"
+            style="display: block; margin: auto 0; font-size: 40px; color: #B1C88E; margin-right: 25px;"></i>
+          <p>3100 Gilman Dr, La Jolla, CA 92093</p>
+    </div></a>
+  </div>
+  </div>
+
+</body>
+
 </html>
