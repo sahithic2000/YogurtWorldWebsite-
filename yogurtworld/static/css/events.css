@@ -213,3 +213,78 @@ h3 {
         flex-wrap: wrap;
     }
 }
+
+/*--------FOOTER-----------*/
+footer {
+    height: 150px;
+    position: absolute; 
+    width: 100%; 
+    margin-top: 100px; 
+    background: #FFAFBD; 
+
+}
+
+.gradient {
+    height: 25px; 
+    background: linear-gradient(180deg, #FFB3B9 0%, #FFC3A0 100%);
+}
+
+.footerContent {
+    height: 125px; 
+    position: relative;
+    width: 100%;
+}
+
+.footerContent > img{
+    width: 200px; 
+    height: 62px;
+    float: left;
+    position: absolute;                
+    top: 50%; 
+    left: 30px;
+    transform: translate(0, -50%);
+}
+
+.phoneNum {
+    font-family: SFProDisplay; 
+    font-size: 18px; 
+    font-weight: 400px;  
+    position: absolute;
+    right: 300px; 
+    height: 25px;
+    top: 50%; 
+    transform: translateY(-50%);
+    margin-left: 45px;
+}
+
+.envelope > img{
+    height: 30px;
+    width: 40px;
+    position: absolute;                
+    top: 50%; 
+    right: 215px;
+    transform: translateY(-50%);
+}
+
+.yelp > svg {
+    position: absolute;                
+    top: 50%; 
+    right: 130px;
+    transform: translateY(-50%);
+}
+
+.instaApp > img{
+    position: absolute;                
+    top: 50%; 
+    right: 45px;
+    transform: translateY(-50%);
+    height: 40px; 
+    width: 40px; 
+}
+
+/* phone screen for footer*/
+@media screen and (max-width: 900px) {
+    .footerContent > img {
+        display: none; 
+    }
+}
