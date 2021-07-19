@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'QuincyBold';
-    src: url('Quincy\ CF\ Bold.ttf');
+    src: url('../fonts/Quincy\ CF\ Bold.ttf');
 }
 
 @font-face {
     font-family: 'Quincy';
-    src: url('Quincy\ CF.ttf');
+    src: url('../fonts/Quincy\ CF.ttf');
 }
 
 /*-------NavBar-------*/
@@ -120,6 +120,10 @@ html, body {
         padding-top: 45px; 
         padding-bottom: 80px; 
     }
+
+    .footerContent > img {
+        display: none; 
+    }
 }
 
 /*-------Header--------*/
@@ -130,6 +134,10 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.first-text {
+    font-size: 52px; 
 }
 
 .header-text {
@@ -143,6 +151,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: black solid;  */
 }
 
 .head-button1 {
@@ -168,6 +177,10 @@ html, body {
     background-color: white; 
     color: black; 
     margin-left: 5.5vw;
+}
+
+.swirly2 {
+    display: none; 
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
@@ -470,5 +483,272 @@ a:visited {
     }
     .header-pic {
         margin-top: 120px;
+    }
+}
+
+body {
+    margin-bottom: 150px; 
+}
+
+/*--------FOOTER-----------*/
+footer {
+    height: 150px;
+    position: absolute; 
+    width: 100%; 
+    margin-top: 100px; 
+    background: #FFAFBD; 
+
+}
+
+.gradient {
+    height: 25px; 
+    background: linear-gradient(180deg, #FFB3B9 0%, #FFC3A0 100%);
+}
+
+.footerContent {
+    height: 125px; 
+    position: relative;
+    width: 100%;
+}
+
+.footerContent > img{
+    width: 200px; 
+    height: 62px;
+    float: left;
+    position: absolute;                
+    top: 50%; 
+    left: 30px;
+    transform: translate(0, -50%);
+}
+
+.phoneNum {
+    font-family: SFProDisplay; 
+    font-size: 18px; 
+    font-weight: 400px;  
+    position: absolute;
+    right: 300px; 
+    height: 25px;
+    top: 50%; 
+    transform: translateY(-50%);
+    margin-left: 45px;
+}
+
+.envelope > img{
+    height: 30px;
+    width: 40px;
+    position: absolute;                
+    top: 50%; 
+    right: 215px;
+    transform: translateY(-50%);
+}
+
+.yelp > svg {
+    position: absolute;                
+    top: 50%; 
+    right: 130px;
+    transform: translateY(-50%);
+}
+
+.instaApp > img{
+    position: absolute;                
+    top: 50%; 
+    right: 45px;
+    transform: translateY(-50%);
+    height: 40px; 
+    width: 40px; 
+}
+
+/* phone screen style */
+@media screen and (max-width: 525px) {
+    
+    .navbar > img {
+        left: 50%; 
+        transform: translate(-50%, -50%);    
+    }
+
+    #hamburgerIcon {
+        float: left; 
+        left: 30px; 
+    }
+
+    .header-pic > img{
+        width: 70vw; 
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;  
+        position: relative;
+        
+    }
+
+    .first-title {
+        font-size: 25px;  
+    }
+
+    .store-images {
+        width: 100%;
+    }
+
+    .blob2 {
+        display: none;  
+    }
+
+    .map {
+        height: 300px; 
+        margin-top: 145px; 
+        width: 100%; 
+    }
+
+    .store-text {
+        margin-top: 310px; 
+        text-align: left;
+    }
+    
+    .parking-title {
+        font-size: 25px; 
+    }
+
+    .direc {
+        height: 300px; 
+        margin-top: 200px; 
+        width: 100%; 
+    }
+
+    .parking-images {
+        width: 100%; 
+    }
+
+    .parking-text {
+        margin-top: 330px;
+        text-align: left; 
+    }
+
+    .blob {
+        display: none; 
+    }
+
+    .menu {
+        width: 166px; 
+        height: 100vh; 
+    }
+    
+    .flex-container {
+        background: none; 
+    } 
+
+    .swirly2 {
+        display: block;
+        width: 100vw; 
+    } 
+
+    .header-text {
+        margin-top: 100px; 
+        height: 400px; 
+    }
+
+    .first-text{
+        font-size: 25px;
+        margin-left: 15px; 
+        margin-right: 15px; 
+        margin-top: 40px; 
+    }
+
+    .header-pic { 
+        margin-top: -100px; 
+    }
+
+    .button-container {
+        margin-top: 240px; 
+        margin-left: 15px;
+        margin-right: 15px; 
+    }
+
+    .head-button1 {
+        width: auto; 
+        height: auto; 
+        font-size: 13px; 
+        padding-top: 11px; 
+        padding-bottom: 11px; 
+    }
+
+    .head-button2 {
+        width: auto; 
+        height: auto; 
+        font-size: 13px; 
+        padding-top: 11px; 
+        padding-bottom: 11px;  
+    }
+
+    .hours-images {
+        width: 100%; 
+    }
+    .hours {
+        width: 80%; 
+    }
+    .time {
+        margin-left: 3em;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .hours {
+        width: 90%; 
+    }
+
+    .phoneNum {
+        display: none; 
+    }
+
+    .navbar > img {
+        display: none;    
+    }
+
+    .header-pic > img {
+        width: 60vw; 
+        height: 125px; 
+        margin-top: 40px; 
+    }
+
+    .first-text{
+        font-size: 22px;
+        margin-top: 70px; 
+    }
+
+    .button-container {
+        margin-top: 175px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .first-text{
+        font-size: 18px;
+        margin-top: 75px; 
+    }
+
+    .button-container {
+        margin-top: 170px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .hours {
+        width: 95%;
+    }
+    .first-text{
+        font-size: 16px;
+        margin-top: 80px; 
+    }
+
+    .head-button1 {
+        font-size: 13px; 
+        padding-top: 5px; 
+        padding-bottom: 5px; 
+    }
+
+    .head-button2 {
+        font-size: 13px; 
+        padding-top: 5px; 
+        padding-bottom: 5px;  
     }
 }
