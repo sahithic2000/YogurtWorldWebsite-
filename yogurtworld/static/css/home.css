@@ -145,6 +145,8 @@ html, body {
     color: white;
     text-align: center;
     margin-left: 3em;
+    /*added*/
+    margin-right: 3em; 
 }
 
 .button-container {
@@ -154,7 +156,7 @@ html, body {
     /* border: black solid;  */
 }
 
-.head-button1 {
+/* .head-button1 {
     box-shadow: 1px 2px 2px 0px gray; 
     padding:18px; 
     width: 217px;
@@ -164,9 +166,11 @@ html, body {
     font-family:'SFProDisplay';
     background-color: #B1C88E; 
     color: white;
-}
+    z-index: 10; 
 
-.head-button2 {
+} */
+
+/* .head-button2 {
     box-shadow: 1px 2px 2px 0px gray; 
     padding:18px; 
     width: 217px;
@@ -177,10 +181,47 @@ html, body {
     background-color: white; 
     color: black; 
     margin-left: 5.5vw;
-}
+    z-index: 10; 
+} */
+
+.head-button1 {
+    box-shadow: 1px 2px 2px 0px gray; 
+    padding:18px; 
+    width: auto;
+    border: none; 
+    border-radius: 40px;
+    font-size: 1.1vw;
+    font-family:'SFProDisplay';
+    background-color: #B1C88E; 
+    color: white;
+    z-index: 10; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+
+} 
+
+.head-button2 {
+    box-shadow: 1px 2px 2px 0px gray; 
+    padding:18px; 
+    width: auto;
+    border: none; 
+    border-radius: 40px;
+    font-size: 1.1vw;
+    font-family:'SFProDisplay';
+    background-color: white; 
+    color: black; 
+    margin-left: 5.5vw;
+    z-index: 10; 
+    padding-left: 45px; 
+    padding-right: 45px; 
+}  
 
 .swirly2 {
     display: none; 
+}
+
+.second-text {
+    font-size: 2vw; 
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
@@ -189,7 +230,6 @@ html, body {
         flex-direction: column;
     }
 }
-
 /*--------Content-------*/
 
 h3 {
@@ -445,10 +485,18 @@ a:visited {
     .header-text {
         margin-left: 0px;
         margin-top: 60px;
+        /*added*/
+        margin-right: 0px; 
     }
     .head-button2 {
         background-color: #E9C441;
         color: white;
+        /*added*/
+        font-size: 14px; 
+    }
+    /*added*/
+    .head-button1 {
+        font-size: 14px; 
     }
 }
 
@@ -564,7 +612,7 @@ footer {
     .navbar > img {
         left: 50%; 
         transform: translate(-50%, -50%);    
-    }
+    } 
 
     #hamburgerIcon {
         float: left; 
