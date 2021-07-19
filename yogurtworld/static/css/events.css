@@ -192,7 +192,8 @@ h3 {
 
 .middlebox img {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .bottomrow img {
@@ -203,13 +204,32 @@ h3 {
     .toprow {
         flex-wrap: wrap;
     }
+    .top-text {
+        margin-left: 0px;
+    }
     .bottomrow {
         flex-wrap: wrap;
     }
     .bottombox {
         flex-wrap: wrap-reverse;
     }
+    .bottom-text {
+        margin-right: 0px;
+    }
     .topbox {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 530px) {
+    #toppic {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+    #bottompic {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
     }
 }
