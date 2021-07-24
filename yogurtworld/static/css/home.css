@@ -127,6 +127,7 @@ html, body {
 .flex-container {
     background: url('../images/swirly.svg'); 
     background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,6 +177,34 @@ html, body {
         flex-direction: column;
     }
 }
+/* REVIEWS */
+.reviews-container {
+    display: block;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    margin: 0px 3em;
+    /* flex: 1; */
+}
+.img-shadow {
+    border-radius: 15px;
+    width:100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column25 {
+    float: left;
+    width: 24%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}  
+  
 
 /*--------Content-------*/
 
@@ -202,6 +231,7 @@ a:visited {
     flex-wrap: nowrap;
     margin: 0px 3em;
     flex: 1;
+    margin-top: 100px;
 }
 
 .hours-images {
