@@ -67,6 +67,10 @@ html, body {
     border-bottom: solid #E9C441 3px;
 }
 
+#underlinePinkMenu{
+    border-bottom: solid #E9C441 3px;
+}
+
 .navbar > img{
     width: 200px; 
     height: 62px;
