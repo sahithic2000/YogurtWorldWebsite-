@@ -93,8 +93,8 @@ h1 {
 
 .fruitText{
     font-family: 'GlacialIndifference';
-    /* font-size: 35px; */
-    font-size: 2.5vw;
+    font-size: 35px;
+    /* font-size: 2.5vw; */
     padding: 25px 0;
     border-bottom: 4px solid #E9C541;
     padding-bottom: 12px;
@@ -326,7 +326,8 @@ h3 {
     }
 
     .flex-container {
-        background: url('../static/images/new_swirls_dots.png');
+        /* background: url('../static/images/new_swirls_dots.png'); */
+        background: url('../static/images/Menu_Masthead_Mobile.png');
         padding: 0;
         margin: 0;
         list-style: none;
@@ -522,28 +523,32 @@ height: 97px;
         display: None;
     } */
     .blob {
-        height: 400px;
-        width: 400px;
-    }
-
-    /* .rotational {
-        font-size: 10px;
-    } */
-}
-
-@media screen and (max-width: 400px) {
-    /* .rotational {
-        display: None;
-    } */
-    .blob {
         height: 300px;
         width: 300px;
     }
 
+    /* .menuHeading {
+        background: url('../static/images/Menu_Masthead_Mobile.png');
+    } */
+
     /* .rotational {
         font-size: 10px;
     } */
 }
+
+/* @media screen and (max-width: 400px) { */
+    /* .rotational {
+        display: None;
+    } */
+    /* .blob {
+        height: 300px;
+        width: 300px;
+    } */
+
+    /* .rotational {
+        font-size: 10px;
+    } */
+/* } */
 
 /*--------FOOTER-----------*/
 footer {
