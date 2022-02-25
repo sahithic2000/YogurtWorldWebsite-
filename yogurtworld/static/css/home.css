@@ -24,10 +24,12 @@ html, body {
 .navbar {
     text-align: right; 
     height: 80px; 
+    /* line-height: 80px;  */
     position: relative; 
     /*stacking context ensures that this navbar (including the menu) is above any elements*/
     z-index: 10; 
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+
     /*change*/
     border: white solid; 
 }
@@ -133,7 +135,8 @@ html, body {
 /*-------Header--------*/
 
 .flex-container {
-    background: url('../images/swirly.svg'); 
+    background: url("../images/swirly.svg");
+    min-width: 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -200,8 +203,8 @@ html, body {
     color: white;
     z-index: 10; 
     padding-left: 40px; 
-    padding-right: 40px; 
-
+    padding-right: 40px;
+    cursor: pointer;
 } 
 
 .head-button2 {
@@ -217,11 +220,13 @@ html, body {
     margin-left: 5.5vw;
     z-index: 10; 
     padding-left: 45px; 
-    padding-right: 45px; 
+    padding-right: 45px;
+    cursor: pointer;
 }  
 
 .swirly2 {
-    display: none; 
+    min-width: 100%;
+    display: none;
 }
 
 .second-text {
@@ -485,6 +490,7 @@ a:visited {
     }
     .button-container {
         margin-top: 450px;
+        display: none;
     }
     .header-text {
         margin-left: 0px;
@@ -684,7 +690,7 @@ footer {
     }
     
     .flex-container {
-        background: none; 
+        background: url("../static/images/swirly2.svg"); 
     } 
 
     .swirly2 {
@@ -720,6 +726,7 @@ footer {
         font-size: 13px; 
         padding-top: 11px; 
         padding-bottom: 11px; 
+        cursor: pointer;
     }
 
     .head-button2 {
@@ -727,7 +734,8 @@ footer {
         height: auto; 
         font-size: 13px; 
         padding-top: 11px; 
-        padding-bottom: 11px;  
+        padding-bottom: 11px;
+        cursor: pointer;  
     }
 
     .hours-images {
@@ -755,7 +763,7 @@ footer {
     }
 
     .header-pic > img {
-        width: 60vw; 
+        width: 50vw; 
         height: 125px; 
         margin-top: 40px; 
     }
@@ -767,6 +775,7 @@ footer {
 
     .button-container {
         margin-top: 175px;
+        visibility: hidden;
     }
 
 }
